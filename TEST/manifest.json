@@ -1,0 +1,18 @@
+ {
+   "manifest_version": 2,
+   "name": "MetLife Chat alert panel",
+   "description": "Popup plus alert in case of a new contact on chat",
+   "version":"1.0.0",
+   "icons": {"128": "metlife_128.png"},
+   "browser_action": {
+     "default_icon": "metlife_19.png",
+     "default_popup": "popup.html"
+   },
+"permissions": ["activeTab"],
+"content_scripts" :[
+ {
+   "matches" : ["https://www.facebook.com/*"],
+   "run_at" : "document_idle",
+   "js" : ["popup.js"]
+ }]
+ }
