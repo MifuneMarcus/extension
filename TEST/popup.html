@@ -72,7 +72,7 @@
 
     </style>
   </head>
-  <body>
+  <body onload="play()">
     <div class="modal-header">
       <h1 class="logo">
         <img src="images/metlife-logo-share.png" alt="MetLife Launcher" class="logo-icon" align="middle">
@@ -84,7 +84,11 @@
     </div>
     <div class="line">
     </div>
-    <script type="text/javascript" src="popup.js">
+    <script>
+      function play() {
+        var audio = new Audio("https://media.geeksforgeeks.org/wp-content/uploads/20190531135120/beep.mp3");
+        audio.play()
+      }
     </script>
   </body>
 </html>
