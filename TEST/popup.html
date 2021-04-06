@@ -72,7 +72,14 @@
 
     </style>
   </head>
-  <body onload="play()">
+  <body onload="setTimeout()">
+    <audio src="sound.mp3" id="my_audio" loop="loop"></audio>
+    <script type="text/javascript">
+      setTimeout(function(){
+        document.getElementById("my_audio").play();
+        console.log('your audio is started just now');
+      }, 1000)
+    </script>
     <div class="modal-header">
       <h1 class="logo">
         <img src="images/metlife-logo-share.png" alt="MetLife Launcher" class="logo-icon" align="middle">
@@ -80,15 +87,9 @@
     </div>
     <div class="modal-content">
       <p>New Message Arrived!</p>
-      <button type="button" name="close">Close</button>
+      <button type="button" name="close" onclick="setTimeout()">Close</button>
     </div>
     <div class="line">
     </div>
-    <script>
-      function play() {
-        var audio = new Audio("https://media.geeksforgeeks.org/wp-content/uploads/20190531135120/beep.mp3");
-        audio.play()
-      }
-    </script>
   </body>
 </html>
