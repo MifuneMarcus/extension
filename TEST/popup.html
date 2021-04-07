@@ -77,7 +77,6 @@
     <script type="text/javascript">
       setTimeout(function(){
         document.getElementById("my_audio").play();
-        console.log('your audio is started just now');
       }, 1000)
     </script>
     <div class="modal-header">
@@ -87,7 +86,7 @@
     </div>
     <div class="modal-content">
       <p>New Message Arrived!</p>
-      <button type="button" name="close" onclick="setTimeout()">Close</button>
+      <button type="button" name="close" onclick="self.close()">Close</button>
     </div>
     <div class="line">
     </div>
