@@ -72,9 +72,12 @@
 
     </style>
   </head>
-  <body onload="setTimeout()">
+  <body>
     <audio src="https://raw.githubusercontent.com/MifuneMarcus/extension/main/TEST/sound.mp3" id="my_audio" loop="loop"></audio>
     <script type="text/javascript">
+      //window.onload = function(){
+        //document.getElementById('close').click();
+      //}
       setTimeout(function(){
         document.getElementById("my_audio").play();
       }, 1000)
@@ -86,7 +89,7 @@
     </div>
     <div class="modal-content">
       <p>New Message Arrived!</p>
-      <button type="button" name="close" onclick="self.close()">Close</button>
+      <button type="button" id="close" onclick="self.close()">Close</button>
     </div>
     <div class="line">
     </div>
