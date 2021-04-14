@@ -65,23 +65,15 @@
         width: 100%;
       }
 
-      button {
-        margin:0 50px;
-        display:block;
-      }
-
     </style>
   </head>
+  <script type="text/javascript" src="popup.js">
+  </script>
   <body>
-    <audio src="https://raw.githubusercontent.com/MifuneMarcus/extension/main/TEST/sound.mp3" id="my_audio" loop="loop"></audio>
-    <script type="text/javascript">
-      //window.onload = function(){
-        //document.getElementById('close').click();
-      //}
-      setTimeout(function(){
-        document.getElementById("my_audio").play();
-      }, 1000)
-    </script>
+    <audio autoplay>
+        <source src="http://www.html5rocks.com/en/tutorials/audio/quick/test.mp3" type="audio/mpeg" />
+        <source src="http://www.html5rocks.com/en/tutorials/audio/quick/test.ogg" type="audio/ogg" />
+    </audio>
     <div class="modal-header">
       <h1 class="logo">
         <img src="images/metlife-logo-share.png" alt="MetLife Launcher" class="logo-icon" align="middle">
@@ -89,7 +81,6 @@
     </div>
     <div class="modal-content">
       <p>New Message Arrived!</p>
-      <button type="button" id="close" onclick="self.close()">Close</button>
     </div>
     <div class="line">
     </div>
