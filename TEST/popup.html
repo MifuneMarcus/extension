@@ -65,10 +65,13 @@
         width: 100%;
       }
 
+      button {
+        margin:0 50px;
+        display:block;
+      }
+
     </style>
   </head>
-  <script type="text/javascript" src="popup.js">
-  </script>
   <body>
     <div class="modal-header">
       <h1 class="logo">
@@ -77,6 +80,7 @@
     </div>
     <div class="modal-content">
       <p>New Message Arrived!</p>
+      <button type="button" id="close" onclick="self.close()">Close</button>
     </div>
     <div class="line">
     </div>
